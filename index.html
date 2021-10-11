@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <meta name="robots" content="noindex" />
+
+    <title>Coming soon</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      body {
+        background-color: #f5f5f5;
+        color: #222222;
+        font-size: 16px;
+        text-align: center;
+      }
+      .brand-screen-full {
+        height: 100vh;
+      }
+      .brand-animation {
+        width: 230px;
+        height: 65px;
+        margin: auto;
+        position: relative;
+      }
+      .brand-circle {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background-color: #48c2c5;
+        animation: move-the-circle 2s infinite;
+        transform-origin: center center;
+      }
+      .brand-circle:nth-child(1) {
+        left: 0px;
+        animation-delay: 0.1s;
+      }
+      .brand-circle:nth-child(2) {
+        left: 30px;
+        animation-delay: 0.2s;
+      }
+      .brand-circle:nth-child(3) {
+        left: 60px;
+        animation-delay: 0.3s;
+      }
+      .brand-circle:nth-child(4) {
+        left: 90px;
+        animation-delay: 0.4s;
+      }
+      .brand-circle:nth-child(5) {
+        left: 120px;
+        animation-delay: 0.5s;
+      }
+      .brand-circle:nth-child(6) {
+        left: 150px;
+        animation-delay: 0.6s;
+      }
+      .brand-circle:nth-child(7) {
+        left: 180px;
+        animation-delay: 0.7s;
+      }
+      .brand-circle:nth-child(8) {
+        left: 210px;
+        animation-delay: 0.8s;
+      }
+
+      @keyframes move-the-circle {
+        0% {
+          transform: translate(0, 0) scale(1);
+          opacity: 1;
+          background-color: #48c2c5;
+        }
+        50% {
+          transform: translate(0, 50px) scale(0.4);
+          opacity: 0.5;
+          background-color: #ed1067;
+        }
+        100% {
+          transform: translate(0, 0) scale(1);
+          opacity: 1;
+          background-color: #48c2c5;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <article class="w-100 brand-screen brand-screen-full">
+      <div class="d-flex w-100 h-100 justify-content-center align-items-center">
+        <div class="container pt-5 pb-5">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <h1>Other Things</h1>
+              <p>There's nothing to see here</p>
+
+              <div class="brand-animation">
+                <div class="brand-circle"></div>
+                <div class="brand-circle"></div>
+                <div class="brand-circle"></div>
+                <div class="brand-circle"></div>
+                <div class="brand-circle"></div>
+                <div class="brand-circle"></div>
+                <div class="brand-circle"></div>
+                <div class="brand-circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </body>
+</html>
