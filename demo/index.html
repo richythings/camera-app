@@ -9,7 +9,7 @@
 		<meta name="apple-mobile-web-app-title" content="Camera app">
 
 		<!-- Name of the app -->
-		<title>Camera App</title>
+		<title>Demo Camera App</title>
 
 		<!-- Link to site manifest -->
 		<link rel="manifest" href="site.webmanifest">
@@ -27,18 +27,22 @@
 		<link rel="stylesheet" href="style.css"> 
 	</head>
 	<body>
+		<header id="brand">F1 Clash camera demo</header>
 
 		<!-- Camera -->
 		<main id="camera">
-
-		    <!-- Camera sensor -->
-		    <canvas id="camera--sensor"></canvas>
-		    
-		    <!-- Camera view -->
-		    <video id="camera--view" autoplay playsinline></video>
 		    
 		    <!-- Camera output -->
 		    <img src="//:0" alt="" id="camera--output">
+			
+			<!-- Camera view -->
+		    <video id="camera--view" autoplay playsinline></video>
+			
+			<!-- Camera overlay -->
+		    <div id="camera--overlay"><img class="camera--mo" id="overlay--mo" src="mo.png" alt="Movember" /></div>
+			
+			<!-- Camera sensor -->
+		    <canvas id="camera--sensor"></canvas>
 
 		    <!-- Camera trigger -->
 		    <button id="camera--trigger">Take a picture</button>
